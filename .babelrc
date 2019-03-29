@@ -1,0 +1,28 @@
+{
+    "ignore": [
+      "**/*.min.js"
+    ],
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "modules": false,
+          "loose": true,
+          "useBuiltIns": "usage",
+          "corejs":"core-js@2",
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "ie > 9"
+            ]
+          }
+        }
+      ],
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime",
+      "@babel/plugin-syntax-dynamic-import"
+    ]
+  }
+  
